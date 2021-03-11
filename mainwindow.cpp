@@ -22,7 +22,8 @@ void MainWindow::on_pushButton_clicked()
 
     QStringList params;
 
-    params << "C:/QT_PROJECTS/PYTHONINQT/scraping4.py";
+    params << "D:/projects/PYTHONINQT/scraping4.py";
+    //params << "C:/QT_PROJECTS/PYTHONINQT/scraping4.py";
     //params << "scraping3.py";//работает если переместить пайтон скрипт в сборку приложения, если нету сборки указать путь
     //p.start("C:/Users/Vova/AppData/Local/Programs/Python/Python38-32/python.exe", params);
     p.start("python", params);
