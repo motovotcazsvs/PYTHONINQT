@@ -33,6 +33,15 @@ void MainWindow::on_pushButton_clicked()
     QString p_stdout2 = "vova";
     qDebug() << p_stdout << p_stdout2;
     lbl.show();
+
+    //QString str1 = p_stdout.right(p_stdout.indexOf('Сейчас в эфире Радио Рекорд'));
+
+    p_stdout.remove("ейчас в эфире Радио Рекорд с");
+    //qDebug() << str1 << p_stdout;// << endl << str2 << endl << str3;
+    QString str1 = p_stdout;
+    qDebug() << str1.left(str1.indexOf(" Плейлист Радио Рекорд"));
+    QString str2 = p_stdout;
+    qDebug() << str2.left(str2.indexOf(" Плейлист Радио Рекорд"));
 }
 
 void MainWindow::on_pushButton_2_clicked()
